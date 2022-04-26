@@ -1,0 +1,54 @@
+html,body {
+  overflow-x: hidden;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      
+    }
+.sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+.bm {
+	  background-color:red;
+    }    
+.bg-image{
+	background-image: url('../../imgs/a.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.back-image{
+  background-image: url('../../imgs/scripit.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.one {
+  border-style: solid;
+  border-color:black;
+}
+.h4 {
+  color:white;
+}
+
+.jumbotron
+{
+    background: url('../../imgs/scripit.jpg') no-repeat center center; 
+    background-size: cover;
+}
+
+.btn-space {
+    margin-up:10px;
+}
+
+.mt-0 {
+  margin-top: 12 !important;
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "author": "Nils HartmannOliver Zeigermann",
+        "bookType": "Education",
+        "category_id": "7",
+        "description": "React ist ein JavaScript-Framework zur Entwicklung von Benutzeroberflächen sowohl im Browser als auch auf Mobilgeräten. Entwickelt und eingesetzt von Facebook ist es mittlerweile als Open-Source-Projekt verfügbar und hat sich bereits im Einsatz bei diversen namhaften Websites, wie z. B. Airbnb und Netflix, bewährt. Dieses Buch stellt Ihnen die Konzepte von React, React Router und Redux anhand eines durchgehenden Beispiels vor. Sie lernen, wie Sie mit React wiederverwendbare UI-Komponenten entwickeln und wie Sie auf Basis der einzelnen Komponenten ganze Anwendungen zusammenbauen. Unter anderem werden folgende Themen behandelt: - Entwickeln und Testen eigener React-Komponenten auf Basis des JavaScript-Standards ECMAScript 2015 (ES6) - Routing mit dem React Router - Das Architektur-Modell Flux und wie damit komplette Anwendungen umgesetzt werden (am Beispiel des Redux-Frameworks) - Serverseitiges Rendern von React-Komponenten und -Anwendungen - Anbindung eines REST-Backends Die im Buch eingesetzten Sprachfeatures aus ES6 werden in einem eigenen Kapitel vorgestellt, sodass zum Verständnis des Buches Kenntnisse von ES5 ausreichen. Nach der Lektüre des Buches werden Sie in der Lage sein, eigene Projekte mit React umzusetzen.",
+        "id": "1",
+        "imageLinks": "react.jpg",
+        "infoLink": "https://books.google.co.in/books?id=IOejDAAAQBAJ&dq=redux+react&hl=&source=gbs_api&redir_esc=y",
+        "publishedDate": "April 20, 2019",
+        "publisher": "VinodBooks",
+        "title": "React"
+    },
+    {
+        "author": "Nils HartmannOliver Zeigermann",
+        "bookType": "Education",
+        "category_id": "7",
+        "description": "React ist ein JavaScript-Framework zur Entwicklung von Benutzeroberflächen sowohl im Browser als auch auf Mobilgeräten. Entwickelt und eingesetzt von Facebook ist es mittlerweile als Open-Source-Projekt verfügbar und hat sich bereits im Einsatz bei diversen namhaften Websites, wie z. B. Airbnb und Netflix, bewährt. Dieses Buch stellt Ihnen die Konzepte von React, React Router und Redux anhand eines durchgehenden Beispiels vor. Sie lernen, wie Sie mit React wiederverwendbare UI-Komponenten entwickeln und wie Sie auf Basis der einzelnen Komponenten ganze Anwendungen zusammenbauen. Unter anderem werden folgende Themen behandelt: - Entwickeln und Testen eigener React-Komponenten auf Basis des JavaScript-Standards ECMAScript 2015 (ES6) - Routing mit dem React Router - Das Architektur-Modell Flux und wie damit komplette Anwendungen umgesetzt werden (am Beispiel des Redux-Frameworks) - Serverseitiges Rendern von React-Komponenten und -Anwendungen - Anbindung eines REST-Backends Die im Buch eingesetzten Sprachfeatures aus ES6 werden in einem eigenen Kapitel vorgestellt, sodass zum Verständnis des Buches Kenntnisse von ES5 ausreichen. Nach der Lektüre des Buches werden Sie in der Lage sein, eigene Projekte mit React umzusetzen.",
+        "id": "2",
+        "imageLinks": "react2.jpg",
+        "infoLink": "https://books.google.co.in/books?id=IOejDAAAQBAJ&dq=redux+react&hl=&source=gbs_api&redir_esc=y",
+        "publishedDate": "April 20, 2019",
+        "publisher": "VinodBooks",
+        "title": "React 2.0"
+    },
+    {
+        "author": "Google & Microsoft",
+        "bookType": "Education",
+        "category_id": "7",
+        "description": "Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop.",
+        "id": "3",
+        "imageLinks": "angular.svg",
+        "infoLink": "https://angular.io/docs",
+        "publishedDate": "Jan 20, 2019",
+        "publisher": "angular.io",
+        "title": "Angular"
+    },
+    {
+        "author": "Evan You",
+        "bookType": "Education",
+        "category_id": "7",
+        "description": "Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.",
+        "id": "4",
+        "imageLinks": "vueJs.png",
+        "infoLink": "https://vuejs.org/",
+        "publishedDate": "Jan 21, 2019",
+        "publisher": "https://vuejs.org/",
+        "title": "Vue JS"
+    },
+    {
+        "author": "Zed A.Shaw ",
+        "bookType": "Education",
+        "category_id": "7",
+        "description": "You Will Learn Python 3! Zed Shaw has perfected the world’s best system for learning Python 3. Follow it and you will succeed—just like the millions of beginners Zed has taught to date! You bring the discipline, commitment, and persistence; the author supplies everything else.",
+        "id": "5",
+        "imageLinks": "python3.jpg",
+        "infoLink": "https://www.amazon.in/Learn-Python-3-Hard-Way/dp/9352865103/ref=sr_1_1?ie=UTF8&qid=1551091042&sr=8-1&keywords=python+books",
+        "publishedDate": "Jan 23, 2019",
+        "publisher": " Pearson Education; First Edition edition (2017)",
+        "title": "Learn Python 3 The Hard Way"
+    },
+    {
+        "author": "Alan Davis",
+        "bookType": "Comics",
+        "category_id": "4",
+        "description": "The Avengers are a fictional team of superheroes appearing in American comic books published by Marvel Comics. The team made its debut in The Avengers #1 (cover-dated Sept. 1963), created by writer-editor Stan Lee and artist/co-plotter Jack Kirby, inspired by the success of DC Comics' Justice League of America. Labeled \"Earth's Mightiest Heroes\", the Avengers originally consisted of Ant-Man, the Hulk, Iron Man, Thor, and the Wasp. Ant-Man had become Giant-Man by issue #2. The original Captain America was discovered trapped in ice in issue #4, and joined the group after they revived him. A rotating roster became a hallmark of the series, although one theme remained consistent: the Avengers fight \"the foes no single superhero can withstand.\" The team, famous for its battle cry of \"Avengers Assemble!\", has featured humans, mutants, Inhumans, androids, aliens, supernatural beings, and even",
+        "id": "6",
+        "imageLinks": "avengers.jpg",
+        "infoLink": "https://www.marvel.com/",
+        "publishedDate": "Mar 18, 2020",
+        "publisher": "MarvelStudio",
+        "title": "Avengers"
+    },
+    {
+        "author": "Alan Davis",
+        "bookType": "Action",
+        "category_id": "4",
+        "description": "The Avengers are a fictional team of superheroes appearing in American comic books published by Marvel Comics. The team made its debut in The Avengers #1 (cover-dated Sept. 1963), created by writer-editor Stan Lee and artist/co-plotter Jack Kirby, inspired by the success of DC Comics' Justice League of America. Labeled \"Earth's Mightiest Heroes\", the Avengers originally consisted of Ant-Man, the Hulk, Iron Man, Thor, and the Wasp. Ant-Man had become Giant-Man by issue #2. The original Captain America was discovered trapped in ice in issue #4, and joined the group after they revived him. A rotating roster became a hallmark of the series, although one theme remained consistent: the Avengers fight \"the foes no single superhero can withstand.\" The team, famous for its battle cry of \"Avengers Assemble!\", has featured humans, mutants, Inhumans, androids, aliens, supernatural beings, and even",
+        "id": "7",
+        "imageLinks": "capM.jpg",
+        "infoLink": "https://www.marvel.com/",
+        "publishedDate": "Mar 18, 2020",
+        "publisher": "MarvelStudio",
+        "title": "Captain Marvel"
+    },
+    {
+        "author": "Alan Davis",
+        "bookType": "Action",
+        "category_id": "4",
+        "description": "After the events of Captain America: Civil War, Prince T'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country's new king. However, T'Challa soon finds that he is challenged for the throne from factions within his own country. When two foes conspire to destroy Wakanda, the hero known as Black Panther must team up with C.I.A. agent Everett K. Ross and members of the Dora Milaje, Wakandan special forces, to prevent Wakanda from being dragged into a world war.",
+        "id": "8",
+        "imageLinks": "wakanda.jpg",
+        "infoLink": "https://www.marvel.com/",
+        "publishedDate": "Mar 18, 2020",
+        "publisher": "MarvelStudio",
+        "title": "Black Panther"
+    },
+    {
+        "author": "",
+        "bookType": "",
+        "category_id": "1",
+        "description": "",
+        "id": "9",
+        "imageLinks": "",
+        "infoLink": "",
+        "publishedDate": "",
+        "publisher": "",
+        "title": ""
+    }
+]

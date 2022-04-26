@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div class="container">
+	<table border="2" class="table table-bordered">
+		<tr class="bg-primary">
+			<th>ID</th>
+			<th>SYMPTOMS</th>
+			<th>MEDICINE</th>
+			<th>TREATMENT</th>
+		</tr>
+		{% if myayu %}
+			{% for item in myayu %}
+			<tr>			
+				<td> {{ item.name }} </td>
+				<td>
+					{% for row in item.description.split("*")[1:] %}
+						<label>{{ loop.index }}.</label> {{ row.strip() }} <br>
+					{% endfor %}
+				</td>
+				
+				<td> {{ites.medicine}}</td>
+				<td>{{item.treatment}}</td>
+			</tr>
+			{% endfor %}
+		{% endif %}
+	</table>	
+</div>
+{% endblock %}

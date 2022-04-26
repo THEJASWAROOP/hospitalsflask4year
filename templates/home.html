@@ -1,0 +1,32 @@
+<nav class="navbar navbar-inverse"> 
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class=" active navbar-brand"><a href="#"><h4 style="color: orange">Healthcare System</h4></a>
+    </div>
+    <div class="collapse navbar-collapse  " id="myNavbar">
+      <ul class="nav navbar-nav ">
+        <li class="active"><a href="{{ url_for('main') }}"><span class="glyphicon glyphicon-home">Home</a></li>
+        <li><a href="{{ url_for('Contacta') }}"><span class="glyphicon glyphicon-envelope"></span>Contact</a></li>
+        <li><a href="{{ url_for('About') }}"><span class="glyphicon glyphicon-info-sign">About</a></li> 
+        <li><a href="{{ url_for('Help') }}"><span class="glyphicon glyphicon-user"></span>Help</a></li> 
+      </ul>
+      {% if current_user.is_authenticated %}
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ url_for('profileInfo') }}">Profile</a></li>
+          <li><a href="{{ url_for('logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+      {% else %}
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ url_for('signup') }}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+</nav>

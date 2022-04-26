@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %} 
+
+
+<div class="container-fluid  back-image">
+	{% if res %}
+		{% for t in res %}
+			<h3>{{ t.name }} | {{ t.id }}</h3>
+		{% endfor %}
+	{% elif myres %}
+		<a href="{{ url_for('adddisease') }}">Add Disease</a>
+	<div class="row">
+		{% for disease in myres %}
+			<div class="col-sm-3">
+				<div class="panel panel-primary bg-image" style="height: 300px;">
+				  <div class="panel-heading">
+				  {{ disease.name }}</div>
+				  <div class="panel-body">
+
+				  	<img class="img-fluid img-responsive" src="/static/upload_files/{{ disease.image }}" alt="Card image"  style="height: 200px;width: 100%;">
+
+				  	<button class="btn btn-secondary btn-sm"><a href="{{ url_for('showMenus', disease_id=disease.id) }}">GO</a></button>
+
+				  	<a href="{{ url_for('editdisease', t_id=disease.id ) }}" class="btn btn-primary btn-sm">Edit</a>
+
+				  	<a href="{{ url_for('deletedisease',t_id=disease.id) }}" class="btn btn-danger btn-sm">Delete</a>
+
+				  </div>
+				</div>				
+			</div>
+		{% endfor %}
+	</div>
+	{% else %}
+		<p>welcome</p>
+	{% endif %}
+</div>
+
+{% endblock %}
+

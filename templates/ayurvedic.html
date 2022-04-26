@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %} 
+
+<div class="container-fluid  back-image">
+	<a href="{{ url_for('addayurvedic') }}">Add Disease</a>
+	{% if myayu %}
+	<div class="row">
+		{% for ayurvedic in myayu %}
+			<div class="col-sm-3">
+				<div class="panel panel-primary bg-image" style="height: 300px;">
+				  <div class="panel-heading">
+				  {{ ayurvedic.name }}</div>
+				  <div class="panel-body">
+
+				  	<img class="img-fluid img-responsive" src="/static/upload_files/{{ ayurvedic.image }}" alt="Card image"  style="height: 200px;width: 100%;">
+
+				  	<button class="btn btn-secondary btn-sm"><a href="{{ url_for('showMenu', ayurvedic_id=ayurvedic.id) }}">GO</a></button>
+
+				  	<a href="{{ url_for('editayurvedic', s_id=ayurvedic.id ) }}" class="btn btn-primary btn-sm">Edit</a>
+
+				  	<a href="{{ url_for('deleteayurvedic',s_id=ayurvedic.id) }}" class="btn btn-danger btn-sm">Delete</a>
+
+				  </div>
+				</div>				
+			</div>
+		{% endfor %}
+	</div>
+	{% else %}
+		<p>welcome Hello</p>
+	{% endif %}
+</div>
+
+{% endblock %}
+

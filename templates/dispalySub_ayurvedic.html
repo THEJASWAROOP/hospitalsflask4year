@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display MenuItems</title>
+</head>
+<body>
+	<table border="5">
+		<tr>
+			<th>name</th>
+			<th>description</th>
+			<th>price</th>
+		</tr>
+		{% for item in items %}			
+			<tr>
+				<td> {{ item.name }} </td>
+				<td> {{ item.description }} </td>
+				<td> {{ item.price }} </td>
+			</tr>			
+		{% endfor %}
+	</table>
+</body>
+</html>

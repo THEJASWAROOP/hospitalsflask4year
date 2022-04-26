@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class="container-fluid">
+
+		<h2><span class="text-uppercase ">{{ current_user.name }}</span> Profile :</h2>
+		{% if current_user.is_authenticated%}
+			<div class="table-responsive-sm col-sm-8  ">
+				<!-- <a href="#" class=" float-right" id="edit">Edit</a> -->
+				<button type="button" class="btn btn-outline-primary"id="edit">UPDATE</button>
+				<a href="#" class="float-right" id="view" style="display: none;">View</a>
+				<form id="profileUpdate" action="{{ url_for('profileInfo') }}" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="profileId" id="profileId" class="form-control form-control-sm" placeholder="name" value="{{ current_user.id }}" required="required">
+			  		<table class="table table-bordered">
+			  			<tr>		  				
+			  				<th rowspan="9">
+			  					{% if current_user.image %}
+			  						<img src="/static/upload_files/{{ current_user.image }}" id="img-this" alt="NO Image Found" class="img-responsive" style="width:250px;height: 250px;">
+			  					{% else %}
+			  						<img src="/static/imgs/noImage.jpg" id="img-this" alt="NO Image Found" class="img-responsive" style="height: 250px;">
+			  					{% endif %}
+			  					<input type="file" name="photo" id="photo">
+			  				</th>
+			  			</tr>
+			  			<tr>
+			  				<th>Name</th>
+			  				<td>
+			  					<h5>{{ current_user.name }}</h5>
+			  					<input type="text" name="name" id="name" class="form-control form-control-sm" placeholder="Name" value="{{ current_user.name}}" required="required">
+			  				</td>
+			  			</tr>
+			  			<!-- <tr>
+			  				<th>Gender</th>
+			  				<td>
+			  					<h5>{{ current_user.gender }}</h5>
+			  					<select name="gender" id="gender" class="form-control form-control-sm" required="required">
+			  						<option value=""></option>
+			  						<option value="Male">Male</option>
+			  						<option value="Female">Female</option>
+			  					</select>
+			  				</td> -->
+			  			</tr>
+			  			<tr>
+			  				<th>Email</th>
+			  				<td>
+			  					<h5>{{ current_user.email }}</h5>
+			  					<input type="email" name="email" id="email" class="form-control form-control-sm" placeholder="Email" value="{{ current_user.email }}" required="required">
+			  				</td>
+			  			</tr>
+			  			<tr>
+			  				<th>Mobile</th>
+			  				<td>
+			  					<h5>{{ current_user.mobile }}</h5>
+			  					<input type="text" name="mobile" id="mobile" class="form-control form-control-sm" placeholder="Employee Mobile" value="{{ current_user.mobile }}" required="required">
+			  				</td>
+			  			</tr>
+			  			<tr>
+			  				<th>LOCATION</th>
+			  				<td>    <h5>{{ current_user.lat }}</h5>
+ 									<input type="text" class="form-control" name="lat" id='lat' readonly="readonly" value="{{ current_user.lat }}" required="required"><br>
+ 									<h5>{{ current_user.lon }}</h5>
+    								<input type="text" class="form-control" name="lon" id='lon' readonly="readonly"
+    								value="{{ current_user.lon }}" required="required">
+   								
+
+
+			  				</td>
+			  			</tr>
+
+			  			<tr>
+			  				<td colspan="3">
+			  					<input type="submit" class="btn btn-info btn-sm float-right" value="Next" />
+			  				</td>
+			  			</tr>
+			  		</table>
+				</form>
+				<div class="container">
+	  				<h2>INSTRUCTIONS FOR UPLOADING</h2>
+	 				 <p>1.we accept only CSV.file format only.</p>
+	  				<p>Templates should be like below given template format </p><br>
+
+	  				<h4> Example Templates</h4>
+
+	  				<h6>For Medical store</h6>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">DrugName</th>
+      <th scope="col">dosage</th>
+      <th scope="col">Form</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amoxicillin</td>
+      <td>500</td>
+      <td>Cap</td>
+    </tr>
+    <!-- <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr> -->
+  </tbody>
+  <h6>For Hospital</h6>
+</table>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Specialization</th>
+      <th scope="col">Hospital name</th>
+      <th scope="col">contact number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heart promblems</td>
+      <td>HS HEART CAREING CENTER</td>
+      <td>00000009</td>
+    </tr>
+</tbody>
+</table>
+	  			</div>	
+	  
+		  	</div>
+		{% else %}
+			<p class="text-danger">No Profile Found :(</p>
+		{% endif %}		
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('th').addClass('bg-primary');
+			$('input').hide();
+			$('select').hide();
+		})
+
+		$('#edit').click(function(){
+			$('h5').hide();
+			$('#img-this').hide();
+			$("#edit").hide();
+
+			$('input').show();
+			$('select').show();
+			$("#view").show();
+
+		});
+
+		$('#view').click(function(){
+			$('h5').show();
+			$("#edit").show();
+			$("#img-this").show();
+
+			$('input').hide();			
+			$('select').hide();
+			$("#view").hide();
+		});
+
+		//  $("#dob").datepicker({
+		// 	maxDate: new Date,
+		// 	minDate: new Date(1793, 1, 1),
+		// 	changeMonth: true,
+		// 	changeYear: true,
+		// 	yearRange: "-180:+0",   // last 180 years
+		// 	dateFormat: 'dd-mm-yy'
+		// });
+	</script>
+{% endblock %}

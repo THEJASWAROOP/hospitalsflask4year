@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>posts</title>
+</head>
+
+
+<body>
+	<h1>user postd :</h1>
+</body><hr/>
+<table border="2">
+	<tr>
+		<th>Title</th>
+		<th>Author</th>
+		<th>Description</th>
+	</tr>
+	{% for post in myposts %}
+	<tr>
+		<td>{{ post.title }}</td>
+		<td>{{ post.author }}</td>
+		<td>{{ post.Description }}</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
